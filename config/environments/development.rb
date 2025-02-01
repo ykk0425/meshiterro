@@ -73,5 +73,9 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+  
+  config.active_job.queue_adapter = :inline
+  #後の章で使用するコードのエラーの回避のため記述 
   config.hosts.clear
+  #ホスト許可
 end
